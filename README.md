@@ -1,6 +1,6 @@
 # mCards iOS Accounts SDK Demo App
 
-The mCards android Accounts SDK encapsulates the following functionality:
+The mCards iOS Accounts SDK encapsulates the following functionality:
 
 1. Link bank accounts
 2. Link credit accounts
