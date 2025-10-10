@@ -420,7 +420,7 @@
 			repositoryURL = "https://github.com/Wantsa/sdk-auth-ios-framework";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.1.3;
 			};
 		};
 		14F173EB2D3EE9D90039A360 /* XCRemoteSwiftPackageReference "sdk-model-ios-framework" */ = {
