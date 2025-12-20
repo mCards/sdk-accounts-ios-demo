@@ -10,7 +10,6 @@
 		14137D8A2D42EF89001AA5C6 /* AuthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 14137D892D42EF89001AA5C6 /* AuthSDK */; };
 		14CAF42C2D44575400730918 /* AuthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 14CAF42B2D44575400730918 /* AuthSDK */; };
 		14CAF4322D47DA1200730918 /* AuthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 14CAF4312D47DA1200730918 /* AuthSDK */; };
-		14CAF4352D48110600730918 /* AuthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 14CAF4342D48110600730918 /* AuthSDK */; };
 		14F173D82D3EE4D00039A360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F173D72D3EE4D00039A360 /* AppDelegate.swift */; };
 		14F173DA2D3EE4D00039A360 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F173D92D3EE4D00039A360 /* SceneDelegate.swift */; };
 		14F173DC2D3EE4D00039A360 /* AccountsySDKDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F173DB2D3EE4D00039A360 /* AccountsySDKDemoVC.swift */; };
@@ -18,6 +17,7 @@
 		14F173E42D3EE4D20039A360 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 14F173E32D3EE4D20039A360 /* Base */; };
 		14F173ED2D3EE9D90039A360 /* CoreSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 14F173EC2D3EE9D90039A360 /* CoreSDK */; };
 		14F173F02D3EE9EA0039A360 /* AuthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 14F173EF2D3EE9EA0039A360 /* AuthSDK */; };
+		5B1A6F4A2EF62DB600A2A6AE /* AuthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5B1A6F492EF62DB600A2A6AE /* AuthSDK */; };
 		5B8579952D72A27E00794937 /* CardsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5B8579942D72A27E00794937 /* CardsSDK */; };
 		5BBE85BF2D91F42900C2E25D /* AccountsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5BBE85BE2D91F42900C2E25D /* AccountsSDK */; };
 /* End PBXBuildFile section */
@@ -42,7 +42,7 @@
 				14CAF4322D47DA1200730918 /* AuthSDK in Frameworks */,
 				14137D8A2D42EF89001AA5C6 /* AuthSDK in Frameworks */,
 				14F173ED2D3EE9D90039A360 /* CoreSDK in Frameworks */,
-				14CAF4352D48110600730918 /* AuthSDK in Frameworks */,
+				5B1A6F4A2EF62DB600A2A6AE /* AuthSDK in Frameworks */,
 				14F173F02D3EE9EA0039A360 /* AuthSDK in Frameworks */,
 				5BBE85BF2D91F42900C2E25D /* AccountsSDK in Frameworks */,
 				14CAF42C2D44575400730918 /* AuthSDK in Frameworks */,
@@ -114,9 +114,9 @@
 				14137D892D42EF89001AA5C6 /* AuthSDK */,
 				14CAF42B2D44575400730918 /* AuthSDK */,
 				14CAF4312D47DA1200730918 /* AuthSDK */,
-				14CAF4342D48110600730918 /* AuthSDK */,
 				5B8579942D72A27E00794937 /* CardsSDK */,
 				5BBE85BE2D91F42900C2E25D /* AccountsSDK */,
+				5B1A6F492EF62DB600A2A6AE /* AuthSDK */,
 			);
 			productName = AuthSDKDemo;
 			productReference = 14F173D42D3EE4D00039A360 /* AccountsSDKDemo.app */;
@@ -148,9 +148,9 @@
 			mainGroup = 14F173CB2D3EE4D00039A360;
 			packageReferences = (
 				14F173EB2D3EE9D90039A360 /* XCRemoteSwiftPackageReference "sdk-model-ios-framework" */,
-				14CAF4332D48110600730918 /* XCRemoteSwiftPackageReference "sdk-auth-ios-framework" */,
 				5B8579932D72A27E00794937 /* XCRemoteSwiftPackageReference "sdk-cards-ios-framework" */,
 				5BBE85BD2D91F42900C2E25D /* XCRemoteSwiftPackageReference "sdk-accounts-ios-framework" */,
+				5B1A6F482EF62DB600A2A6AE /* XCRemoteSwiftPackageReference "sdk-auth-ios-framework" */,
 			);
 			productRefGroup = 14F173D52D3EE4D00039A360 /* Products */;
 			projectDirPath = "";
@@ -415,19 +415,19 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		14CAF4332D48110600730918 /* XCRemoteSwiftPackageReference "sdk-auth-ios-framework" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Wantsa/sdk-auth-ios-framework";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.1.3;
-			};
-		};
 		14F173EB2D3EE9D90039A360 /* XCRemoteSwiftPackageReference "sdk-model-ios-framework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Wantsa/sdk-model-ios-framework";
 			requirement = {
 				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.6;
+			};
+		};
+		5B1A6F482EF62DB600A2A6AE /* XCRemoteSwiftPackageReference "sdk-auth-ios-framework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mCards/sdk-auth-ios-framework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
 				minimumVersion = 1.1.4;
 			};
 		};
@@ -436,7 +436,7 @@
 			repositoryURL = "https://github.com/mCards/sdk-cards-ios-framework.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.1.0;
 			};
 		};
 		5BBE85BD2D91F42900C2E25D /* XCRemoteSwiftPackageReference "sdk-accounts-ios-framework" */ = {
@@ -444,7 +444,7 @@
 			repositoryURL = "https://github.com/mCards/sdk-accounts-ios-framework";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.2;
+				minimumVersion = 1.0.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -462,11 +462,6 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AuthSDK;
 		};
-		14CAF4342D48110600730918 /* AuthSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 14CAF4332D48110600730918 /* XCRemoteSwiftPackageReference "sdk-auth-ios-framework" */;
-			productName = AuthSDK;
-		};
 		14F173EC2D3EE9D90039A360 /* CoreSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 14F173EB2D3EE9D90039A360 /* XCRemoteSwiftPackageReference "sdk-model-ios-framework" */;
@@ -474,6 +469,11 @@
 		};
 		14F173EF2D3EE9EA0039A360 /* AuthSDK */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = AuthSDK;
+		};
+		5B1A6F492EF62DB600A2A6AE /* AuthSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B1A6F482EF62DB600A2A6AE /* XCRemoteSwiftPackageReference "sdk-auth-ios-framework" */;
 			productName = AuthSDK;
 		};
 		5B8579942D72A27E00794937 /* CardsSDK */ = {
