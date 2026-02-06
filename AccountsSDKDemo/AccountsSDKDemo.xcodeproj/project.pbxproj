@@ -444,7 +444,7 @@
 			repositoryURL = "https://github.com/mCards/sdk-accounts-ios-framework";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.5;
+				minimumVersion = 1.0.9;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
