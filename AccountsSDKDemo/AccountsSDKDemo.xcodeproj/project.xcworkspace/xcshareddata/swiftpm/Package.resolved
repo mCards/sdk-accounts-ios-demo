@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mCards/sdk-accounts-ios-framework",
       "state" : {
-        "revision" : "e08b3e7fafe52ed45619f4d3c090a86d5c8ffc6b",
-        "version" : "1.0.5"
+        "revision" : "87bc2500383b5ff123cbcc55a4d87c81f761215a",
+        "version" : "1.0.9"
       }
     },
     {

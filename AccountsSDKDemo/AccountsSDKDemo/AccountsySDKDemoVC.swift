@@ -58,7 +58,7 @@ class AccountsySDKDemoVC: UIViewController, CSDKTokenRefreshCallback, ASDKTokenR
     func setupHistorySDK(withToken token: String, cardId: String) {
         AccountsSdkProvider.shared.configure(accessToken: token, debugMode: true, tokenRefreshCallback: self, loggingCallback: LoggingHandler())
         
-        AccountsSdkProvider.shared.getAccounts { result in
+        AccountsSdkProvider.shared.getAccounts(cardId: cardId) { result in
             switch result {
             case .success(let response):
                 print(response)
